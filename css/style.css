@@ -1,0 +1,78 @@
+body {
+    background-color: #111;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    background-color: #000;
+    padding: 30px;
+    border-radius: 10px;
+    width: 600px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.task-toggle {
+    display: none;
+}
+
+.row {
+    display: flex;
+    gap: 40px;
+}
+
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-label {
+    padding: 8px 12px;
+    background-color: #222;
+    border: 1px solid #555;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.task-label:hover {
+    background-color: #333;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: right;
+    margin-left: 360px;
+    cursor: pointer;
+}
+
+
+.buttons .btn {
+    display: none;
+    padding: 8px 12px;
+    background-color: white;
+    color: black;
+    border: 2px solid #d14dfb;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+#toggle1:checked ~ .row .buttons #btn1 { display: block; }
+#toggle2:checked ~ .row .buttons #btn2 { display: block; }
+#toggle3:checked ~ .row .buttons #btn3 { display: block; }
+#toggle4:checked ~ .row .buttons #btn4 { display: block; }
+#toggle5:checked ~ .row .buttons #btn5 { display: block; }
+#toggle6:checked ~ .row .buttons #btn6 { display: block; }
